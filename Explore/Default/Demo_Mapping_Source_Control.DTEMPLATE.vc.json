@@ -7,10 +7,13 @@
     "specialCharacterSupport" : "false",
     "links" : [
       {
-        "link" : "Oracle -> Sequence"
+        "link" : "Sequence -> Target"
       },
       {
-        "link" : "Sequence -> Target"
+        "link" : "Sorter -> Sequence"
+      },
+      {
+        "link" : "Oracle -> Sorter"
       }
     ],
     "transformations" : [
@@ -377,8 +380,32 @@
           "startValue" : "0",
           "useSharedSequence" : "false"
         }
+      },
+      {
+        "createTime" : "2025-09-02T06:13:52.436Z",
+        "name" : "Sorter",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "sorterMode" : "SIMPLE",
+        "sortEntries" : [
+          {
+            "ascending" : "false",
+            "fieldName" : "shippedDate"
+          }
+        ]
       }
     ]
   },
-  "vcsExportTime" : "2025-09-01 23:11:03 PDT"
+  "vcsExportTime" : "2025-09-01 23:16:47 PDT"
 }
