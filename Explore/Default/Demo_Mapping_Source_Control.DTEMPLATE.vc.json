@@ -1,0 +1,384 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "Demo_Mapping_Source_Control",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "Oracle -> Sequence"
+      },
+      {
+        "link" : "Sequence -> Target"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2025-09-02T06:01:26.563Z",
+        "name" : "Oracle",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "customerId"
+            },
+            "name" : "customerId",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "orderNumber"
+            },
+            "name" : "orderNumber",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "orderDate"
+            },
+            "name" : "orderDate",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "requiredDate"
+            },
+            "name" : "requiredDate",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "shippedDate"
+            },
+            "name" : "shippedDate",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "status"
+            },
+            "name" : "status",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "comments"
+            },
+            "name" : "comments",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@7bRiqbuhYJFiUTm8xNK5KF",
+          "connectionName" : "Sample CSV Connection",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "My_Orders",
+            "label" : "My_Orders",
+            "objectName" : "My_Orders",
+            "objectType" : "Standard Records",
+            "path" : "My_Orders",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "customerId",
+                "fieldType" : "CONNECTOR",
+                "label" : "customerId",
+                "nativeName" : "customerId",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Orders"
+                  }
+                ]
+              },
+              {
+                "name" : "orderNumber",
+                "fieldType" : "CONNECTOR",
+                "label" : "orderNumber",
+                "nativeName" : "orderNumber",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Orders"
+                  }
+                ]
+              },
+              {
+                "name" : "orderDate",
+                "fieldType" : "CONNECTOR",
+                "label" : "orderDate",
+                "nativeName" : "orderDate",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Orders"
+                  }
+                ]
+              },
+              {
+                "name" : "requiredDate",
+                "fieldType" : "CONNECTOR",
+                "label" : "requiredDate",
+                "nativeName" : "requiredDate",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Orders"
+                  }
+                ]
+              },
+              {
+                "name" : "shippedDate",
+                "fieldType" : "CONNECTOR",
+                "label" : "shippedDate",
+                "nativeName" : "shippedDate",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Orders"
+                  }
+                ]
+              },
+              {
+                "name" : "status",
+                "fieldType" : "CONNECTOR",
+                "label" : "status",
+                "nativeName" : "status",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Orders"
+                  }
+                ]
+              },
+              {
+                "name" : "comments",
+                "fieldType" : "CONNECTOR",
+                "label" : "comments",
+                "nativeName" : "comments",
+                "nativeType" : "string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "My_Orders"
+                  }
+                ]
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2025-09-02T06:01:26.564Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true",
+                "names" : [
+                  {
+                    "inputName" : "comments"
+                  },
+                  {
+                    "inputName" : "customerId"
+                  },
+                  {
+                    "inputName" : "NEXTVAL"
+                  },
+                  {
+                    "inputName" : "orderDate"
+                  },
+                  {
+                    "inputName" : "orderNumber"
+                  },
+                  {
+                    "inputName" : "requiredDate"
+                  },
+                  {
+                    "inputName" : "shippedDate"
+                  },
+                  {
+                    "inputName" : "status"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "dataAdapter" : {
+          "connectionId" : "saas:@fVHjpFdrSojgZ8D29k4CWD",
+          "connectionName" : "shyam_oracle1",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "Oracle",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "Mapping_Source_Control_Target",
+            "label" : "Mapping_Source_Control_Target",
+            "path" : "Mapping_Source_Control_Target",
+            "retainMetadata" : "false"
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "true",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2025-09-02T06:06:54.681Z",
+        "name" : "Sequence",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "midstream" : "true",
+        "state" : {
+          "currentValue" : "1",
+          "cycle" : "false",
+          "endValue" : "9223372036854775807",
+          "incrementBy" : "1",
+          "numberOfCachedValues" : "0",
+          "reset" : "false",
+          "startValue" : "0",
+          "useSharedSequence" : "false"
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-09-01 23:11:03 PDT"
+}
